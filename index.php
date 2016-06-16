@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1,width=device-width">
     <title>CSS Unit Converter</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" media="screen" href="resources/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="resources/css/main.css">
     <script type="text/javascript" src="resources/js/jquery.min.js"></script>
@@ -50,9 +52,9 @@ $EndingHTML = "\r\n\t</textarea>\r\n</div>\r\n</body>\r\n</html>";
 $Code = isset($_POST['Code']) ? empty($_POST['Code']) ?
     die('No Code Given!' . $EndingHTML) : $_POST['Code'] : die('No Code Given!' . $EndingHTML);
 $FromUnit = isset($_POST['FromUnit']) ? empty($_POST['FromUnit']) ?
-    die('No FromUnit Given!' . $EndingHTML) : $_POST['FromUnit'] : die('No FromUnit Given!' . $EndingHTML);
+    die('No FromUnit Given!' . $EndingHTML) : strtolower($_POST['FromUnit']) : die('No FromUnit Given!' . $EndingHTML);
 $ToUnit = isset($_POST['ToUnit']) ? empty($_POST['ToUnit']) ?
-    die('No ToUnit Given!' . $EndingHTML) : $_POST['ToUnit'] : die('No ToUnit Given!' . $EndingHTML);
+    die('No ToUnit Given!' . $EndingHTML) : strtolower($_POST['ToUnit']) : die('No ToUnit Given!' . $EndingHTML);
 $ConversionFactor = isset($_POST['ConversionFactor']) ? empty($_POST['ConversionFactor']) ?
     die('No ConversionFactor Given!' . $EndingHTML) : $_POST['ConversionFactor'] :
     die('NoConversionFactor Given!' . $EndingHTML);
@@ -62,9 +64,17 @@ $UnitValueArray = array_values(array_unique($UnitMatch[1]));
 $Count = count($UnitStringArray);
 $Index = 0;
 $UnitStringReplaceArray = array();
-while ($Index < $Count) {
-    array_push($UnitStringReplaceArray, ($UnitValueArray[$Index] * $ConversionFactor) . $ToUnit);
-    $Index++;
+if ($ToUnit === 'px') {
+    while ($Index < $Count) {
+        // For pixels there is no such thing as 0.25px!
+        array_push($UnitStringReplaceArray, round($UnitValueArray[$Index] * $ConversionFactor) . $ToUnit);
+        $Index++;
+    }
+} else {
+    while ($Index < $Count) {
+        array_push($UnitStringReplaceArray, ($UnitValueArray[$Index] * $ConversionFactor) . $ToUnit);
+        $Index++;
+    }
 }
 echo str_replace($UnitStringArray, $UnitStringReplaceArray, $Code);
 ?>
