@@ -46,13 +46,16 @@
     <label for="ConvertedCode">Converted Code</label>
     <textarea name="ConvertedCode" id="ConvertedCode" rows="5" spellcheck="false">
 <?php
-$Code = isset($_POST['Code']) ? empty($_POST['Code']) ? die('No Code Given!') : $_POST['Code'] : die('No Code Given!');
-$FromUnit = isset($_POST['FromUnit']) ? empty($_POST['FromUnit']) ? die('No FromUnit Given!') : $_POST['FromUnit'] :
-    die('No FromUnit Given!');
-$ToUnit = isset($_POST['ToUnit']) ? empty($_POST['ToUnit']) ? die('No ToUnit Given!') : $_POST['ToUnit'] :
-    die('No ToUnit Given!');
+$EndingHTML = "\r\n\t</textarea>\r\n</div>\r\n</body>\r\n</html>";
+$Code = isset($_POST['Code']) ? empty($_POST['Code']) ?
+    die('No Code Given!' . $EndingHTML) : $_POST['Code'] : die('No Code Given!' . $EndingHTML);
+$FromUnit = isset($_POST['FromUnit']) ? empty($_POST['FromUnit']) ?
+    die('No FromUnit Given!' . $EndingHTML) : $_POST['FromUnit'] : die('No FromUnit Given!' . $EndingHTML);
+$ToUnit = isset($_POST['ToUnit']) ? empty($_POST['ToUnit']) ?
+    die('No ToUnit Given!' . $EndingHTML) : $_POST['ToUnit'] : die('No ToUnit Given!' . $EndingHTML);
 $ConversionFactor = isset($_POST['ConversionFactor']) ? empty($_POST['ConversionFactor']) ?
-    die('No ConversionFactor Given!') : $_POST['ConversionFactor'] : die('NoConversionFactor Given!');
+    die('No ConversionFactor Given!' . $EndingHTML) : $_POST['ConversionFactor'] :
+    die('NoConversionFactor Given!' . $EndingHTML);
 preg_match_all('/(\d+(\.\d+)?)' . $FromUnit . '/', $Code, $UnitMatch);
 $UnitStringArray = array_values(array_unique($UnitMatch[0]));
 $UnitValueArray = array_values(array_unique($UnitMatch[1]));
@@ -68,4 +71,7 @@ echo str_replace($UnitStringArray, $UnitStringReplaceArray, $Code);
     </textarea>
 </div>
 </body>
+<script type="text/javascript">
+    $('#ConvertedCode', document).select();
+</script>
 </html>
