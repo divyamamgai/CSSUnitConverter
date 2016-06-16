@@ -7,7 +7,6 @@
             $ConversionFrom = $('#ConversionFrom', d);
             $ConversionFactorValue = $('#ConversionFactorValue', d);
             $ConversionTo = $('#ConversionTo', d);
-            $('#Code', d).focus();
         })
         .on('input', '#FromUnit', function () {
             var $This = $(this),

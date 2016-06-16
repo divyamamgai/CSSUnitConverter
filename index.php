@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1,width=device-width">
+    <?php include 'seo.php'; ?>
     <title>CSS Unit Converter</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -13,12 +14,18 @@
 </head>
 <body>
 <div class="container">
-    <h1 style="display: inline-block"><img src="icon.png">CSS Unit Converter</h1>
-    <h4 style="float: right;text-align: right">
-        Created By <b>Divya Mamgai</b><br>
-        1.0<br>
-        <a href="https://github.com/divyamamgai/CSSUnitConverter">GitHub Repo</a>
-    </h4>
+    <div class="row">
+        <div class="col-sm-6">
+            <h1><img src="icon.png">CSS Unit Converter</h1>
+        </div>
+        <div class="col-sm-6">
+            <h4>
+                Created By <b>Divya Mamgai</b><br>
+                1.0<br>
+                <a href="https://github.com/divyamamgai/CSSUnitConverter">GitHub Repo</a>
+            </h4>
+        </div>
+    </div>
     <form method="POST">
         <div class="row">
             <div class="col-md-12">
@@ -48,7 +55,7 @@
     <label for="ConvertedCode">Converted Code</label>
     <textarea name="ConvertedCode" id="ConvertedCode" rows="5" spellcheck="false">
 <?php
-$EndingHTML = "\r\n\t</textarea>\r\n</div>\r\n</body>\r\n</html>";
+$EndingHTML = "\r\n\t</textarea>\r\n</div>\r\n</body><script type=\"text/javascript\">\r\n\t$('#Code', document).focus();\r\n</script>\r\n</html>";
 $Code = isset($_POST['Code']) ? empty($_POST['Code']) ?
     die('No Code Given!' . $EndingHTML) : $_POST['Code'] : die('No Code Given!' . $EndingHTML);
 $FromUnit = isset($_POST['FromUnit']) ? empty($_POST['FromUnit']) ?
