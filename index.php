@@ -13,7 +13,7 @@
 </head>
 <body>
 <div class="container">
-    <h1 style="display: inline-block">CSS Unit Converter</h1>
+    <h1 style="display: inline-block"><img src="icon.png">CSS Unit Converter</h1>
     <h4 style="float: right;text-align: right">
         Created By <b>Divya Mamgai</b><br>
         1.0<br>

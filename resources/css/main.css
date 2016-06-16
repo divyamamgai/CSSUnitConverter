@@ -7,6 +7,11 @@ body {
     font-size: 62.5%;
 }
 
+h1 img {
+    width: 6.4rem;
+    margin: -0.7rem 1.6rem 0 0;
+}
+
 label {
     display: block;
     font-weight: 600;
@@ -69,8 +74,17 @@ input[type=submit]:hover {
     background-color: #dddddd;
 }
 
+input, textarea {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
 input:focus, textarea:focus {
     -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
     -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    border-color: #3885c8;
 }

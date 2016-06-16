@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19654da8-c147-494c-b74d-5dcbb82f5d80" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/main.css" afterPath="$PROJECT_DIR$/resources/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/main.js" afterPath="$PROJECT_DIR$/resources/js/main.js" />
     </list>
     <ignored path="CSSUnitConverter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,22 +29,22 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+            <state relative-caret-position="485">
+              <caret line="88" column="19" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="25" />
               <folding>
                 <element signature="e#5#156#0" expanded="false" />
-                <element signature="e#164#253#0" expanded="false" />
-                <element signature="e#270#337#0" expanded="false" />
+                <element signature="e#227#316#0" expanded="false" />
+                <element signature="e#333#400#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+            <state relative-caret-position="400">
+              <caret line="25" column="34" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -54,7 +55,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="0">
-                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -65,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+            <state relative-caret-position="144">
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -83,10 +84,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/js/main.js" />
-        <option value="$PROJECT_DIR$/resources/css/main.css" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/resources/css/main.css" />
+        <option value="$PROJECT_DIR$/resources/js/main.js" />
       </list>
     </option>
   </component>
@@ -158,12 +159,12 @@
       <workItem from="1466075727651" duration="1492000" />
       <workItem from="1466077534505" duration="763000" />
       <workItem from="1466078321231" duration="734000" />
-      <workItem from="1466090082354" duration="131000" />
+      <workItem from="1466090082354" duration="853000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3120000" />
+    <option name="totallyTimeSpent" value="3842000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -210,8 +211,8 @@
           <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
           <folding>
             <element signature="e#5#156#0" expanded="false" />
-            <element signature="e#164#253#0" expanded="false" />
-            <element signature="e#270#337#0" expanded="false" />
+            <element signature="e#227#316#0" expanded="false" />
+            <element signature="e#333#400#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -252,8 +253,8 @@
           <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
           <folding>
             <element signature="e#5#156#0" expanded="false" />
-            <element signature="e#164#253#0" expanded="false" />
-            <element signature="e#270#337#0" expanded="false" />
+            <element signature="e#227#316#0" expanded="false" />
+            <element signature="e#333#400#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -294,8 +295,8 @@
           <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
           <folding>
             <element signature="e#5#156#0" expanded="false" />
-            <element signature="e#164#253#0" expanded="false" />
-            <element signature="e#270#337#0" expanded="false" />
+            <element signature="e#227#316#0" expanded="false" />
+            <element signature="e#333#400#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -304,14 +305,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -334,7 +327,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
@@ -342,18 +335,6 @@
       </provider>
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-          <folding>
-            <element signature="e#5#156#0" expanded="false" />
-            <element signature="e#164#253#0" expanded="false" />
-            <element signature="e#270#337#0" expanded="false" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Intern/CodeAvail/resources/php/promotionalTemplate.php">
@@ -364,10 +345,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="88" column="19" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="25" />
+          <folding>
+            <element signature="e#5#156#0" expanded="false" />
+            <element signature="e#227#316#0" expanded="false" />
+            <element signature="e#333#400#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+        <state relative-caret-position="400">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
           <folding />
         </state>
       </provider>
