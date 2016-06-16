@@ -1,0 +1,76 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Source Code Pro", Consolas, sans-serif;
+    font-size: 62.5%;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+}
+
+#ConversionMsg {
+    padding: 0.5rem;
+    display: block;
+    font-size: 1.4rem;
+}
+
+textarea {
+    font-family: inherit;
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    resize: none;
+    border: solid 0.1rem #999999;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+input {
+    font-size: 1.6rem;
+    display: block;
+    border: solid 0.1rem #999999;
+    padding: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+input[type=submit] {
+    color: #444444;
+    font-size: 1.6rem;
+    display: block;
+    border: solid 0.1rem #999999;
+    background-color: #efefef;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    cursor: pointer;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+input[type=submit]:hover {
+    color: #333333;
+    border-color: #888888;
+    background-color: #dddddd;
+}
+
+input:focus, textarea:focus {
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
